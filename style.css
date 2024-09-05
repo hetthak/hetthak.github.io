@@ -1,7 +1,7 @@
 body{
     font-family: Helvetica, Arial, sans-serif;
     margin: 0px;
-    font-size: 1.2vw;
+    font-size: 1.5vw;
 }
 
 
@@ -27,7 +27,7 @@ body > header{
     background-color: orange;
     color: white;
     display: flex;
-    height: 12vh;
+    height: 16vh;
     align-items: center;
     justify-content: space-around;
 
