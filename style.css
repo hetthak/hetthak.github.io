@@ -2,6 +2,7 @@ body{
     font-family: Helvetica, Arial, sans-serif;
     margin: 0px;
     font-size: 1.5vw;
+    background-color:white;
 }
 
 
@@ -9,30 +10,97 @@ body{
 #logo{
     margin: 0px;
     padding: 8px;
-    font-family: "Fredoka One", sans-serif;
-    width: 16%;
-    text-shadow: 
-    1px 1px 0px black,   /* bottom-right */
-    -1px 1px 0px black,  /* bottom-left */
-    1px -1px 0px black,  /* top-right */
-    -1px -1px 0px black; /* top-left */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 12%;
+    
     
 }
+.search-bar {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-bar input {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 250px;
+  }
+  
+  .search-bar button {
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color:white;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    margin-left: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .search-bar button:hover {
+    background-color: white;
+  }
+
+  .user-actions {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .user-actions a {
+    text-decoration: none;
+    font-size: 20px;
+    color:white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    background-color: black;
+  }
+  
+  .user-actions a:hover {
+    background-color: black;
+  }
+  
+  .login {
+    background-color:white;
+    color: black;
+    padding: 8px 16px;
+  }
+  
+  .login:hover {
+    background-color: black;
+  }
+  
+  .cart {
+    background-color: white;
+    color: white;
+    padding: 8px 16px;
+  }
+  
+  .cart:hover {
+    background-color: black;
+  }
+  
+    .cart-count {
+    font-weight: bold;
+  }
 
 ul{
     margin: 0px;
 }
 
 body > header{
-    background-color: orange;
-    color: white;
+    background-color:black;
+    color:white;
     display: flex;
-    height: 16vh;
+    height: 12vh;
     align-items: center;
     justify-content: space-around;
-
 }
-
 .ulbuttons{
     list-style: none;
     text-decoration: none;
@@ -45,27 +113,43 @@ body > header{
     margin: 16px;
 }
 
-.navbuttons{
-    color: white;
-    text-decoration: none;
-    padding: 16px;
-    border: 1px solid white;
-    border-radius: 5%;
-}
-
-body > main article {
-    width: 80%;
-    margin: auto;
-}
-
 #main-content {
     display: flex;
     justify-content: space-around;
 }
 
-#main-content > div {
-    width: 90%;
+#main-content > div > div img  {
+    border-radius: 5%;
+    width: 300px;
+    height:50%;
+    grid-area: menu;
 }
+
+.product-grid > ul  {
+  display: grid;
+  grid-template-columns: repeat(3, 3fr); /* 2 columns */
+  gap: 20px; /* Space between the items */
+  padding: 20px;
+  border-radius: 10px;
+  list-style-type: none;
+  
+  
+}
+
+.product-grid > ul > li > form {
+    color: black;
+    font-size: 20px;
+    background-color:white;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    width: 20%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: left;
+  
+}
+
 form{
     text-align: center;
 }
@@ -78,7 +162,8 @@ img {
     border-radius: 50%;
 }
 body > footer{
-    background-color: orange;
+    background-color: black;
+    color: white;
     display: flex;
 }
 
